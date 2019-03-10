@@ -22,6 +22,7 @@ void DrawSnowRow(int row){
       ledMatrix.setPixel(x,row);
       ledMatrix.commit();
       delay(200);
+      delay(100);
     }
   }
 }
@@ -31,6 +32,7 @@ void DrawSnow_fall1(){
   ledMatrix.commit();
   for (int x=7; x>=0; x--){
     ledMatrix.setPixel(x,7);
+
     ledMatrix.commit();
   }
 
